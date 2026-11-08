@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Survey Form</h1>
+
+        <a href="records.html">View Records</a>
+
+        <form id="surveyForm">
+
+            <fieldset>
+
+                <legend>About You</legend>
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                >
+
+
+                <label for="favoriteColor">
+                    Favorite Color
+                </label>
+
+                <select id="favoriteColor">
+
+                    <option value="">
+                        Choose a color
+                    </option>
+
+                    <option value="Blue">
+                        Blue
+                    </option>
+
+                    <option value="Red">
+                        Red
+                    </option>
+
+                    <option value="Green">
+                        Green
+                    </option>
+
+                    <option value="Purple">
+                        Purple
+                    </option>
+
+                    <option value="Black">
+                        Black
+                    </option>
+
+                </select>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>School Information</legend>
+
+                <p>Year in School</p>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="year"
+                        value="Freshman"
+                    >
+                    Freshman
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="year"
+                        value="Sophomore"
+                    >
+                    Sophomore
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="year"
+                        value="Junior"
+                    >
+                    Junior
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="year"
+                        value="Senior"
+                    >
+                    Senior
+                </label>
+
+            </fieldset>
+
+
+            <label for="rating">
+                Rate CS 316 from 1 to 10
+            </label>
+
+            <input
+                type="range"
+                id="rating"
+                min="1"
+                max="10"
+                value="5"
+            >
+
+            <p>
+                Rating:
+                <span id="ratingValue">5</span>
+            </p>
+
+
+            <label for="favoriteLanguage">
+                Favorite Programming Language
+            </label>
+
+            <input
+                type="text"
+                id="favoriteLanguage"
+            >
+
+
+            <label for="comments">
+                Comments
+            </label>
+
+            <textarea
+                id="comments"
+                rows="6"
+            ></textarea>
+
+
+            <button type="submit">
+                Save Survey
+            </button>
+
+        </form>
+
+        <p id="formMessage"></p>
+
+    </div>
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>
