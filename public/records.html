@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Records</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Account Records</h1>
+
+        <a href="form.html">Go to Survey Form</a>
+
+        <label for="accountSelect">
+            Select Account ID
+        </label>
+
+        <select id="accountSelect">
+            <option value="">
+                Choose an account
+            </option>
+        </select>
+
+        <table id="recordsTable">
+
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Account ID</td>
+                    <td id="recordAccountId">
+                        No account selected
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Name</td>
+                    <td id="recordName">
+                        No account selected
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Favorite Color</td>
+                    <td id="recordColor">
+                        No account selected
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Year in School</td>
+                    <td id="recordYear">
+                        No account selected
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>CS 316 Rating</td>
+                    <td id="recordRating">
+                        No account selected
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Favorite Language</td>
+                    <td id="recordLanguage">
+                        No account selected
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Comments</td>
+                    <td id="recordComments">
+                        No account selected
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <button id="logoutButton">
+            Logout
+        </button>
+
+    </div>
+
+    <script src="records.js"></script>
+
+</body>
+
+</html>
